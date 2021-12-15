@@ -1,0 +1,23 @@
+[33mcommit a9818f43e3feeef60a7ce552e0132d0a0eb03f4d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: valcoellar <valcoellar@gmail.com>
+Date:   Tue Dec 14 20:59:34 2021 -0600
+
+    v2
+
+[33mcommit 3b4bb7d11cd40c2a4c67a956e766382c160b30b4[m
+Author: valcoellar <valcoellar@gmail.com>
+Date:   Mon Dec 13 21:46:23 2021 -0600
+
+    Edit README.md and hello_world.txt
+
+[33mcommit ffbf45206d406232d3f654a231db549b0b37d2c9[m
+Author: valcoellar <valcoellar@gmail.com>
+Date:   Mon Dec 13 21:38:35 2021 -0600
+
+    add  hello_world.txt
+
+[33mcommit 899d40aa805924caddc7174233b04e8747c0bc92[m
+Author: valcoellar <95990363+valcoellar@users.noreply.github.com>
+Date:   Mon Dec 13 21:30:00 2021 -0600
+
+    Initial commit
