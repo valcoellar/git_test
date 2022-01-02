@@ -1,0 +1,10 @@
+/* CSS Style File   */
+
+/* background yellow , text red  font size 20px & center aligned */
+
+.container .text{
+	background-color: yellow;
+	color: red;
+	font-sizr: 20px;
+	text-align: center;
+}

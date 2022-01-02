@@ -1,0 +1,16 @@
+/*  CSS Styles */
+
+.first {
+	background-color: black;
+	color: white;
+		
+}
+.second{
+	background-color: yellow;
+	color: black;
+}
+
+.first, .second  {
+	font-size: 28px;
+}
+

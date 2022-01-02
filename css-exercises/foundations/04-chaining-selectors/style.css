@@ -1,0 +1,22 @@
+/* Style CSS File */
+
+
+/*
+{avatar  proportioned} are 300px wide and height that retains original square
+
+{avar disorted} are 200px wide, height twice as big as its width
+
+   */
+
+
+.avatar.proportioned  {
+	height: 150px;
+	wide: 300px;
+
+}
+
+.avatar.disorted {
+	height: 400px;
+	wide: 200px;
+	
+}

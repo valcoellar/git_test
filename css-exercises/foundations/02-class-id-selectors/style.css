@@ -1,0 +1,28 @@
+/* CSS File */
+.uno {
+    background-color: pink;
+    font-size: 32px;
+    }
+
+#dos {
+    color: blue;
+    font-size: 90px;
+}
+
+.tres {
+    background-color: pink ;
+    font-size: 40px;
+
+}
+
+#cuatro {
+    background-color: green;
+    font-size: 35px;
+    font-style: bold;
+
+}
+
+.cinco {
+    background-color: pink;
+    font-size:  32px;
+}
