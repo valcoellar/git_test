@@ -7,9 +7,12 @@
 }
 
 .header {
-    
     background-color: #1f2937;
-    
+    display: flex;
+   /* justify-items: center; */
+    justify-content: center; 
+    padding: 20px 300px 50px 300px;
+  
 }
 
 ul {
