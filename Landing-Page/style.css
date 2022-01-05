@@ -16,18 +16,6 @@
 }
 
 
-.card1 {
-    display: flex;
-    justify-content: space-between;
-   
-    
-    border-color: red;
-    border-style: solid;
-
-}
-
-
-
 ul {
     list-style-type: none;
 }
