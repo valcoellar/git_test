@@ -9,7 +9,7 @@
 .header {
     background-color: #1f2937;
     display: flex;
-   /* justify-items: center; */
+     
     justify-content: center; 
     padding: 20px 300px 50px 300px;
   
@@ -24,6 +24,18 @@ a {
     font-size: 18px;
     text-decoration: none;
   }
+
+  /* horizontal align 
+.links {
+   
+  display: flex;
+  
+  gap: 18px;
+/* ----------------- */
+
+}
+*/ 
+
 
 .text-1 {
     font-size: 48px;
