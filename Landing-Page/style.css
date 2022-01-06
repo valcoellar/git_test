@@ -84,7 +84,11 @@ a {
     border: none;
 }
 
-.Header-Card-Left {
+.Container2 {
+    display: flex;
+    justify-content: space-between;
+
+
    border: red;
    border-style: solid;
 }
