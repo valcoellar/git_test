@@ -69,8 +69,10 @@ a {
 }
 
 .img-placeholder {
-    width: 300px;
-    height: 100px;
+    width: 500px;
+    height: 200px; 
+    border: red;
+    border-style: solid;
 
 }
 
@@ -86,12 +88,23 @@ a {
 
 .Container2 {
     display: flex;
-    justify-content: space-between;
-
+  justify-content: space-between; 
+   
 
    border: red;
    border-style: solid;
+   padding: 70px 0px 0px 0px ;
 }
 
+.Card-L {
+  display: flex; 
+  flex-wrap: wrap;
+      
+}
+
+.Card-R {
+    
+
+}
 
 /* End HEADER  */
