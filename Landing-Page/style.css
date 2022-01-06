@@ -8,13 +8,10 @@ body {
 }
 
 /* Start HEADER  */
-.G-Body {
+.Container1{
     display: flex;
-    flex-direction: column;
-
-
-}
-
+    justify-content: space-between;
+  }
 
 
 .header {
@@ -22,10 +19,10 @@ body {
     display: flex;
    padding: 20px 300px 50px 300px;  
      /*   flex-wrap: wrap;  */
-     align-content: center; 
+   /*  align-content: center; */
    /*  align-items: center;  */ 
-    justify-content: space-between; 
-    flex-direction: column;
+ /*   justify-content: space-between; */
+    flex-direction: column; 
  
 }
 
