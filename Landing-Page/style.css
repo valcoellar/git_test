@@ -106,3 +106,20 @@ a {
 }
 
 /* End HEADER  */
+
+/* Start Bar*/
+.title{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.bar-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    }
+
+
+
+/* End Bar*/
