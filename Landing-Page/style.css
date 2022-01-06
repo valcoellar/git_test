@@ -1,19 +1,32 @@
 /*  style.css */
-.body {
+body {
    /* max-width: 500px;
     margin: auto; */ 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
+    margin: 0;
 }
+
+/* Start HEADER  */
+.G-Body {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
 
 .header {
     background-color: #1f2937;
     display: flex;
-    padding: 20px 300px 50px 300px; 
-       /* flex-wrap: wrap; */  
-       justify-content: space-between; 
-        
-  
+   padding: 20px 300px 50px 300px;  
+     /*   flex-wrap: wrap;  */
+     align-content: center; 
+   /*  align-items: center;  */ 
+    justify-content: space-between; 
+    flex-direction: column;
+ 
 }
 
 /* 
@@ -38,6 +51,7 @@ a {
     color: #e5e7eb;
     font-size: 18px;
     text-decoration: none;
+    
   }
 
 
@@ -72,3 +86,11 @@ a {
     font-weight: bold;
     border: none;
 }
+
+.Header-Card-Left {
+   border: red;
+   border-style: solid;
+}
+
+
+/* End HEADER  */
