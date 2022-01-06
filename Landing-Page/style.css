@@ -61,7 +61,8 @@ a {
 
 .text-1, .text-2 {
     color: #e5e7eb;
-  }
+   
+}
 
   .logo {
     width:100px;
@@ -71,8 +72,8 @@ a {
 .img-placeholder {
     width: 500px;
     height: 200px; 
-    border: red;
-    border-style: solid;
+  /*  border: red;
+    border-style: solid; */
 
 }
 
@@ -80,30 +81,27 @@ a {
     font-family: Roboto, sans-serif;
     background-color: #3882f6;
     border-radius: 8px;
+    width: 150px;
     color: #f9faf8;
     padding: 10px 10px;
     font-weight: bold;
-    border: none;
+    border: none; 
 }
 
 .Container2 {
     display: flex;
-  justify-content: space-between; 
-   
-
-   border: red;
-   border-style: solid;
-   padding: 70px 0px 0px 0px ;
+    justify-content: space-between; 
+    padding: 70px 0px 0px 0px ;
 }
 
 .Card-L {
   display: flex; 
-  flex-wrap: wrap;
-      
+  flex-wrap: wrap;  
 }
 
 .Card-R {
-    
+    display: flex;
+    padding: 0px 0px 0px 420px
 
 }
 
