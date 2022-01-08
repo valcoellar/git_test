@@ -163,14 +163,29 @@ a {
 /* Start white bar */
 .white-card {
     display: flex;
-    background-color: white;
+    align-items: center;
     justify-content: center;
+    background-color: white;
 }
 .container3{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3882f6;
     border-radius: 10%;
+    
+}
+
+.container3-text-1{
+    font-size: 16px;
+    font-weight: 800;
+    color: #f9faf8;
+
+}
+.container3-text-2{
+    font-size: 16px;
+    color: #f9faf8;
+
 }
 
 
@@ -184,7 +199,7 @@ a {
     font-weight: bold;
     border: 2px; 
     border-color: white;
-
+    
 }
 
 /* End White bar */
