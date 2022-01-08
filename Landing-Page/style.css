@@ -22,11 +22,6 @@ body {
  
 }
 
-/* 
-ul {
-    list-style-type: none;
-}
-*/ 
 a {
     color: #e5e7eb;
     font-size: 18px;
@@ -46,9 +41,6 @@ a {
     text-decoration: none;
     
   }
-
-
-
 .text-1 {
     font-size: 48px;
     font-weight: 800;
@@ -66,12 +58,9 @@ a {
 }
 
 .img-placeholder {
-    width: 500px;
+    width: 400px;
     height: 200px; 
-  /*  border: red;
-    border-style: solid; */
-
-}
+  }
 
 .SignUp-1 {
     font-family: Roboto, sans-serif;
@@ -91,14 +80,14 @@ a {
 }
 
 .Card-L {
-  display: flex; 
-  flex-wrap: wrap;  
+    display: flex; 
+    flex-wrap: wrap;  
+    padding-right: 2%;
 }
 
 .Card-R {
     display: flex;
-    padding: 0px 0px 0px 420px
-
+    
 }
 
 /* End HEADER  */
