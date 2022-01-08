@@ -165,20 +165,28 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: white;
+    margin-top: 5%;
 }
 .container3{
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    justify-content: space-between; 
     background-color: #3882f6;
     border-radius: 10%;
+    padding: 20px 20px 20px 20px;
     
 }
 
+.texts{
+
+}
+
 .container3-text-1{
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 26px;
+    font-weight: bold;
     color: #f9faf8;
 
 }
@@ -196,7 +204,7 @@ a {
     width: 150px;
     color: #f9faf8;
     padding: 10px 10px;
-    font-weight: bold;
+    font-weight:bold ;
     border: 2px; 
     border-color: white;
     
