@@ -168,20 +168,17 @@ a {
     flex-direction: column;
     background-color: white;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 .container3{
     display: flex;
     align-items: center;
-    
-    justify-content: space-between; 
+    justify-content: space-between;
     background-color: #3882f6;
     border-radius: 15px;
    padding: 40px 150px 40px 150px;     
 }
 
-.texts{
-
-}
 
 .container3-text-1{
     font-size: 26px;
@@ -195,7 +192,6 @@ a {
 
 }
 
-
 .SignUp-2{
     font-family: Roboto, sans-serif;
     background-color: #3882f6;
@@ -204,9 +200,27 @@ a {
     color: #f9faf8;
     padding: 10px 10px;
     font-weight:bold ;
-    border: 2px; 
-    border-color: white;
+    border-color:white;
+    border-style: solid;
+    margin-left: 100px;
     
 }
 
 /* End White bar */
+
+/* Start Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+.footer-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+/* End Footer */
+
