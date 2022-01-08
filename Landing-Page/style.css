@@ -151,5 +151,12 @@ a {
     text-align: justify;
 }
 
+.sign {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: right;
+    font-weight: bold;
+}
+
 /* End Grey Bar */
 
