@@ -22,9 +22,24 @@
       
       console.log(multiply(2,2));
 
+        //Write a function called capitalize that takes a string and returns that string with 
+        //only the first letter capitalized. 
+        //Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
 
+        function capitalize(Str_1){
+            let Str_2 = "";
+            Str_2 = Str_1;
+            
+        let First = Str_2.charAt(0);
+        let Cap = First.toUpperCase();
+        
+        let Str_Tail = Str_2.slice(1);
+        let Final_Str = Cap + Str_Tail;
 
-      //  console.log(23 + 97);
+            console.log(Final_Str);
+        }
+
+      capitalize("hello");
         
 	</script>
 
