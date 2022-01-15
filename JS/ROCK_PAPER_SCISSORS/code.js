@@ -28,6 +28,7 @@ function Round (playerSelection, computerSelection){
 // - and then return a string that declares the winner 
 // of the round like so: "You Lose! Paper beats Rock"
 let Pselects = "";
+let PlayerPoint = 0;
 
 switch (playerSelection){
     case "1":
@@ -44,38 +45,48 @@ switch (playerSelection){
 console.log(`player choose: ${Pselects}`);
 console.log(`computer choose: ${computerSelection}` );
 
+
+
 // ------ Draw game ------
 if (Pselects == computerSelection){console.log("Draw Game!!")};
 // -----------------------
 
 // --- Player Wins
 // Paper beats Rock
-if (Pselects == "Paper" && computerSelection == "Rock"){console.log("You win!! Paper beats Rock !")};
+if (Pselects == "Paper" && computerSelection == "Rock"){console.log("You win!! Paper beats Rock !"); PlayerPoint = 1; };
 // Rock beats Scissors
-if (Pselects == "Rock" && computerSelection == "Scissors"){console.log("You win!! Rock beats Scissors !")};
+if (Pselects == "Rock" && computerSelection == "Scissors"){console.log("You win!! Rock beats Scissors !"); PlayerPoint = 1; };
 // Scissors beats Paper
-if (Pselects == "Scissors" && computerSelection == "Paper"){console.log("You win!! Scissors beats Paper !")};
+if (Pselects == "Scissors" && computerSelection == "Paper"){console.log("You win!! Scissors beats Paper !"); PlayerPoint = 1; };
 
 // --- Computer Wins
 // Paper beats Rock
-if (Pselects == "Rock" && computerSelection == "Paper"){console.log("You Lose!! Paper beats Rock !")};
+if (Pselects == "Rock" && computerSelection == "Paper"){console.log("You Lose!! Paper beats Rock !"); PlayerPoint = 0;};
 // Rock beats Scissors
-if (Pselects == "Scissors" && computerSelection == "Rock"){console.log("You Lose!! Rock beats Scissors !")};
+if (Pselects == "Scissors" && computerSelection == "Rock"){console.log("You Lose!! Rock beats Scissors !"); PlayerPoint = 0;};
 // Scissors beats Paper
-if (Pselects == "Paper" && computerSelection == "Scissors"){console.log("You win!! Scissors beats Paper !")};
+if (Pselects == "Paper" && computerSelection == "Scissors"){console.log("You win!! Scissors beats Paper !"); PlayerPoint = 0;};
 
+
+return PlayerPoint;
 };
 
 
+
+
+function game() {
+// Write a NEW function called game().
+// Use the previous function inside of this one to play
+// a 5 round game that keeps score and reports a winner or loser at the end.
 
 
 
 let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
 Round (playerSelection,computerPlay());
 
+};
 
 
 
-// console.log(computerPlay());
 
 
