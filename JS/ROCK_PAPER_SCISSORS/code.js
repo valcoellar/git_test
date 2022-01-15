@@ -20,6 +20,7 @@ switch (dice){
 return cPlay; 
 };
 
+let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
 
 function Round (playerSelection, computerSelection){
 // Write a function that plays a single round of Rock Paper Scissors.
@@ -28,7 +29,9 @@ function Round (playerSelection, computerSelection){
 // - and then return a string that declares the winner 
 // of the round like so: "You Lose! Paper beats Rock"
 
-}
+
+
+};
 
 
 
