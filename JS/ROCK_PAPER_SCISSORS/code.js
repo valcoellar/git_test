@@ -27,24 +27,42 @@ function Round (playerSelection, computerSelection){
 // - the playerSelection and computerSelection 
 // - and then return a string that declares the winner 
 // of the round like so: "You Lose! Paper beats Rock"
-let Pselects = "none "
+let Pselects = "";
 
 switch (playerSelection){
-    case 1:
+    case "1":
         Pselects = "Rock";
     break;
-    case 2:
+    case "2":
         Pselects = "Paper";
     break;
-    case 3:
+    case "3":
         Pselects = "Scissors";
     break;
 }
 
+console.log(`player choose: ${Pselects}`);
+console.log(`computer choose: ${computerSelection}` );
 
-console.log(Pselects);
+// ------ Draw game ------
+if (Pselects == computerSelection){console.log("Draw Game!!")};
+// -----------------------
 
+// --- Player Wins
+// Paper beats Rock
+if (Pselects == "Paper" && computerSelection == "Rock"){console.log("You win!! Paper beats Rock !")};
+// Rock beats Scissors
+if (Pselects == "Rock" && computerSelection == "Scissors"){console.log("You win!! Rock beats Scissors !")};
+// Scissors beats Paper
+if (Pselects == "Scissors" && computerSelection == "Paper"){console.log("You win!! Scissors beats Paper !")};
 
+// --- Computer Wins
+// Paper beats Rock
+if (Pselects == "Rock" && computerSelection == "Paper"){console.log("You Lose!! Paper beats Rock !")};
+// Rock beats Scissors
+if (Pselects == "Scissors" && computerSelection == "Rock"){console.log("You Lose!! Rock beats Scissors !")};
+// Scissors beats Paper
+if (Pselects == "Paper" && computerSelection == "Scissors"){console.log("You win!! Scissors beats Paper !")};
 
 };
 
@@ -53,7 +71,7 @@ console.log(Pselects);
 
 
 let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
-Round (playerSelection,"rock");
+Round (playerSelection,computerPlay());
 
 
 
