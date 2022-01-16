@@ -45,10 +45,8 @@ switch (playerSelection){
 console.log(`player choose: ${Pselects}`);
 console.log(`computer choose: ${computerSelection}` );
 
-
-
 // ------ Draw game ------
-if (Pselects == computerSelection){console.log("Draw Game!!")};
+if (Pselects == computerSelection){console.log("Draw Game!!"); PlayerPoint = 3; };
 // -----------------------
 
 // --- Player Wins
@@ -78,26 +76,26 @@ function game() {
 // a 5 round game that keeps score and reports a winner or loser at the end.
 
 // Round function returns the player points 
+// Returns 3 in a Draw Round.
+
 let PlayerScore = 0;
 let ComputerScore =0;
+let winner = 0;
 
 for (let pass = 0; pass < 5; pass++){
         let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
-       if (Round (playerSelection,computerPlay()) == 1) {
-           PlayerScore++;
-           
-       } else {
-        ComputerScore++;
-       }
+        winner = Round (playerSelection,computerPlay());
+       
+       if (winner == 1) {PlayerScore++;}
+       if (winner == 0) {ComputerScore++;}
+       } 
 
-      }
-
-console.log("Player Score " + PlayerScore);
-console.log("Computer Score " + ComputerScore);
+console.log(`Player Score  ${PlayerScore}`);
+console.log(`Computer Score  ${ComputerScore}`);
 
 };
 
-
+// init game 
 game();
 
 
