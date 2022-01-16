@@ -72,21 +72,33 @@ return PlayerPoint;
 };
 
 
-
-
 function game() {
 // Write a NEW function called game().
 // Use the previous function inside of this one to play
 // a 5 round game that keeps score and reports a winner or loser at the end.
 
+// Round function returns the player points 
+let PlayerScore = 0;
+let ComputerScore =0;
 
+for (let pass = 0; pass < 5; pass++){
+        let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
+       if (Round (playerSelection,computerPlay()) == 1) {
+           PlayerScore++;
+           
+       } else {
+        ComputerScore++;
+       }
 
-let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
-Round (playerSelection,computerPlay());
+      }
+
+console.log("Player Score " + PlayerScore);
+console.log("Computer Score " + ComputerScore);
 
 };
 
 
+game();
 
 
 
