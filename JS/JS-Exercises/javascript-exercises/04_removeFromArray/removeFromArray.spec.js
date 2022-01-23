@@ -8,7 +8,7 @@ describe('removeFromArray', () => {
     expect(removeFromArray([1, 2, 3, 4], 3, 2)).toEqual([1, 4]);
   });
   test.skip('ignores non present values', () => {
-    expect(removeFromArray([1, 2, 3, 4], 7, "tacos")).toEqual([1, 2, 3, 4]);
+    expect(removeFromArray([1, 2, 3, 4], "tacos",7)).toEqual([1, 2, 3, 4]);
   });
   test.skip('ignores non present values, but still works', () => {
     expect(removeFromArray([1, 2, 3, 4], 7, 2)).toEqual([1, 3, 4]);
