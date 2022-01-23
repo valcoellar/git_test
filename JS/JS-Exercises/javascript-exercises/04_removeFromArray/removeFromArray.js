@@ -6,25 +6,13 @@ const removeFromArray = function(BaseArray, ItemToRemove) {
 
 //[Arguments] { '0': [ 1, 2, 3, 4 ], '1': 3, '2': 2 }
 
-
-//for (let i = 0;i < ItemToRemove.lenght; i++) {
-// BaseArray = BaseArray.filter(Item => Item != ItemToRemove);
-
 for (let i = 1; arguments[i] != null;i++ ){
     BaseArray = BaseArray.filter(Item => Item != arguments[i]);
-    console.log(arguments[i]);
+   // console.log(arguments[i]);
 }
 
 
-
-// console.log(BaseArray + " --> " + ItemToRemove);
-//};
-
 return BaseArray;
-
-
-
-
 
 
 };
