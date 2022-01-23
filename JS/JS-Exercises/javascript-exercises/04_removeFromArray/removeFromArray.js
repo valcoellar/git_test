@@ -1,16 +1,17 @@
-const removeFromArray = function(BaseArray, ItemToRemove) {
+const removeFromArray = function([BaseArray], [ItemToRemove]) {
 // Implement a function that takes an array and some other arguments then removes the other arguments from that array:
 
 // ```javascript
 //removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
 //```
 
-let SelectedItem = BaseArray.indexOf(ItemToRemove);
+function DelItems() {
+    BaseArray = BaseArray.filter(Item => Item != ItemToRemove);
+};
 
-return BaseArray.filter(Item => Item != ItemToRemove);
+ItemToRemove.forEach(DelItems);
 
-
-//return result;
+return BaseArray;
 
 
 
