@@ -8,9 +8,7 @@ const removeFromArray = function(BaseArray, ItemToRemove) {
 
 for (let i = 1; arguments[i] != null;i++ ){
     BaseArray = BaseArray.filter(Item => Item != arguments[i]);
-   // console.log(arguments[i]);
 }
-
 
 return BaseArray;
 
