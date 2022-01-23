@@ -6,9 +6,10 @@ const removeFromArray = function(BaseArray, ItemToRemove) {
 
 //[Arguments] { '0': [ 1, 2, 3, 4 ], '1': 3, '2': 2 }
 
+
 for (let i = 1; arguments[i] != null;i++ ){
-    BaseArray = BaseArray.filter(Item => Item != arguments[i]);
-}
+        BaseArray = BaseArray.filter(Item => Item !== arguments[i]);
+    }
 
 return BaseArray;
 
