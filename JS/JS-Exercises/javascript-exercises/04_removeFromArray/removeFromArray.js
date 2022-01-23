@@ -7,8 +7,10 @@ const removeFromArray = function(BaseArray, ItemToRemove) {
 
 let SelectedItem = BaseArray.indexOf(ItemToRemove);
 
-return SelectedItem.splice(0,SelectedItem);
+return BaseArray.filter(Item => Item != ItemToRemove);
 
+
+//return result;
 
 
 
