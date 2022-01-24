@@ -8,7 +8,8 @@ if (Nstart > Nend) {  // swapping the honey !
                         Nend = temp;
                     }
 
- 
+ if ((Nstart < 0) || (Nend < 0)) {return "ERROR";}
+
     let Nresult = 0;
         for (let i = Nstart; i <= Nend; i++){
             Nresult = Nresult + i;
