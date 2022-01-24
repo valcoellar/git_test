@@ -8,7 +8,9 @@ if (Nstart > Nend) {  // swapping the honey !
                         Nend = temp;
                     }
 
- if ((Nstart < 0) || (Nend < 0)) {return "ERROR";}
+ if ((Nstart < 0) || (Nend < 0)) {return "ERROR";} // negatives
+ if ((typeof Nstart != "number") || (typeof Nend != "number")) {return "ERROR";} // non numbers parms
+ 
 
     let Nresult = 0;
         for (let i = Nstart; i <= Nend; i++){
