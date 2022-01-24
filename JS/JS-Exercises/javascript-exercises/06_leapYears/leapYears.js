@@ -16,7 +16,9 @@ let Nfirst = InputYear % 4;
 let Nsecond = InputYear % 100 ;
 let Nthird = InputYear % 400 ;
 
-if (((Nfirst = 0) && (Nsecond = 0)) && (Nthird = 0)) {return false;} else {return true;}
+// error × works with non century years 
+
+if (((Nfirst > 0) && (Nsecond > 0)) && (Nthird > 0)) {return false;} else {return true;}
 
 
 
