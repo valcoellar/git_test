@@ -13,7 +13,14 @@ Result_Temp = Math.round(Result_Temp * 10) / 10;
 return Result_Temp;
 };
 
-const ctof = function() {
+const ctof = function(Itemperature) {
+// (0 °C × 9/5) + 32 = 32 °F
+
+let Result_Temp = ((Itemperature * 9/5) + 32);
+Result_Temp = Math.round(Result_Temp * 10) / 10;
+
+return Result_Temp;
+
 
 };
 

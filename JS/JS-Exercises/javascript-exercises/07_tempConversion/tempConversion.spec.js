@@ -13,10 +13,10 @@ describe('ftoc', () => {
 });
 
 describe('ctof', () => {
-  test.skip('works', () => {
+  test('works', () => {
     expect(ctof(0)).toEqual(32);
   });
-  test.skip('rounds to 1 decimal', () => {
+  test('rounds to 1 decimal', () => {
     expect(ctof(73.2)).toEqual(163.8);
   });
   test.skip('works with negatives', () => {
