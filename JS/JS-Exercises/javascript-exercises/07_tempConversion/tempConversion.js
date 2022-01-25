@@ -8,6 +8,7 @@ const ftoc = function(Itemperature) {
 // (32 °F − 32) × 5/9 = 0 °C
 
 let Result_Temp = ((Itemperature - 32) * 5/9);
+Result_Temp = Math.round(Result_Temp * 10) / 10;
 
 return Result_Temp;
 };
