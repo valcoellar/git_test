@@ -48,3 +48,7 @@ const container2 = document.querySelector('.extradiv');
 	container2.appendChild(content4);
 
 // a <p> that says “ME TOO!”
+	const content5 = document.createElement("p");
+			content5.textContent = "ME TOO!"
+		container2.appendChild(content5);
+		
