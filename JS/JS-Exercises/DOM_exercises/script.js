@@ -29,13 +29,22 @@ const content = document.createElement('div');
 	
 // a <div> with a black border and pink background color with the 
 // following elements inside of it:
-// another <h1> that says “I’m in a div”
-// a <p> that says “ME TOO!”
+
+
 // Hint for this one: after creating the <div> with createElement,
 //append the <h1> and <p> to it before adding it to the container.	
 
+const extracontent = document.createElement('div');
+		extracontent.classList.add('extradiv');
+		extracontent.style.backgroundColor = "pink";
+	document.body.appendChild(extracontent);
 
+// another <h1> that says “I’m in a div”
+const container2 = document.querySelector('.extradiv');
 
+	const content4 = document.createElement("h1");
+		 content4.textContent = "I am in a div";
+	
+	container2.appendChild(content4);
 
-
-
+// a <p> that says “ME TOO!”
