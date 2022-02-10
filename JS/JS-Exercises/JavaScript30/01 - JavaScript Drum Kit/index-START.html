@@ -61,7 +61,32 @@
 // functions
 
 
+<<<<<<< HEAD
 
+=======
+ function playSound (Key_Pressed) {
+  // console.log(`audio[data-key="${Key_Pressed.keyCode}"]`);
+	const audio = document.querySelector(`audio[data-key="${Key_Pressed.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${Key_Pressed.keyCode}"]`);
+    if (!audio) return;
+ 
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+ console.log(key);
+ };
+ 
+ function removeTransition () {
+ 
+ };
+ 
+ 
+ 
+ const keys = Array.from(document.querySelectorAll('.key'));
+ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+ window.addEventListener('keydown', playSound);
+ 
+>>>>>>> 6899db8e1821595d3b3bc2f3e08063202aa2cf3c
 
 
 </script>
