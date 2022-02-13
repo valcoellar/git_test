@@ -70,31 +70,17 @@ return PlayerPoint;
 };
 
 
-// function game() {
 
-// Write a NEW function called game().
-// Use the previous function inside of this one to play
-// a 5 round game that keeps score and reports a winner or loser at the end.
 
-// Round function returns the player points 
-// Returns 3 in a Draw Round.
+//  const container = document.querySelector('#container');
 
-//let PlayerScore = 0;
-//let ComputerScore =0;
-//let winner = 0;
+// const content = document.createElement('div');
+//		content.classList.add('content');
+//		content.textContent = 'This is the glorious text-content!';
 
-//for (let pass = 0; pass < 5; pass++){
-//        let playerSelection = prompt("1=Rock  2= Paper 3= Scissors")
-//        winner = Round (playerSelection,computerPlay());
-       
-//       if (winner == 1) {PlayerScore++;}
-//       if (winner == 0) {ComputerScore++;}
-//       } 
+//	container.appendChild(content);
 
-//console.log(`Player Score  ${PlayerScore}`);
-//console.log(`Computer Score  ${ComputerScore}`);
 
-//};
 
 // init game 
 game();
