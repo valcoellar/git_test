@@ -77,19 +77,22 @@ const Button_Rock = document.querySelector(".RK");
 			Round_Play ("1",CP);
 		Player_Choose.textContent = "Rock";		
 		Computer_Choose.textContent = CP;				
-		
 });
 
-
 const Button_Papper = document.querySelector(".PP");
-	Button_Papper.addEventListener("click",function StartRound(){Round_Play ("2",computerPlay())
+	Button_Papper.addEventListener("click",function StartRound(){
+		var CP = computerPlay();
+		Round_Play ("2",CP);
 	Player_Choose.textContent = "Papper";	
-
+	Computer_Choose.textContent = CP;
 });
 
 const Button_Scissors = document.querySelector(".SC");
-	Button_Scissors.addEventListener("click",function StartRound(){Round_Play ("3",computerPlay())
+	Button_Scissors.addEventListener("click",function StartRound(){
+		var CP = computerPlay();
+		Round_Play ("3",CP);
 	Player_Choose.textContent = "Scissors";
+	Computer_Choose.textContent = CP;
 });
 // ---------------------------------------------------
 
