@@ -80,8 +80,8 @@ const Button_Rock = document.querySelector(".RK");
 	Button_Rock.addEventListener("click",function StartRound(Sel){Round_Play ("1",computerPlay())});
 
 
-//const Button_Papper = document.querySelector(".P");
-//	Button_Papper.addEventListener("click", PlayRound("2"));
+const Button_Papper = document.querySelector(".PP");
+	Button_Papper.addEventListener("click",function StartRound(Sel){Round_Play ("2",computerPlay())});
 
 //const Button_Scissors = document.querySelector(".S");
 //	Button_Scissors.addEventListener("click", PlayRound("3"));
