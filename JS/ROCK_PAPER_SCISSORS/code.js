@@ -43,12 +43,6 @@ switch (playerSelection){
 console.log(`player choose: ${Pselects}`);
 console.log(`computer choose: ${computerSelection}` );
 
-//----------- display results-------
-const Player_Choose = document.querySelector(".Player_Choose");
-	Player_Choose.textContet = "hoa";
-
-// -----------end display results---
-
 // ------ Draw game ------
 if (Pselects == computerSelection){console.log("Draw Game!!"); PlayerPoint = 3; };
 // -----------------------
@@ -73,24 +67,30 @@ if (Pselects == "Paper" && computerSelection == "Scissors"){console.log("You win
 return PlayerPoint;
 };
 
-
-
-//function StartRound(Sel){
-//Round_Play (Sel,computerPlay());
-//};
-
+const Player_Choose = document.querySelector(".Player_Choose");
+const Computer_Choose = document.querySelector(".Computer_Choose");
 
 // ---------------------------------------------------
 const Button_Rock = document.querySelector(".RK");
-	//Button_Rock.addEventListener("click",StartRound("1"));
-	Button_Rock.addEventListener("click",function StartRound(Sel){Round_Play ("1",computerPlay())});
+		Button_Rock.addEventListener("click",function StartRound(){
+			var CP = computerPlay();
+			Round_Play ("1",CP);
+		Player_Choose.textContent = "Rock";		
+		Computer_Choose.textContent = CP;				
+		
+});
 
 
 const Button_Papper = document.querySelector(".PP");
-	Button_Papper.addEventListener("click",function StartRound(Sel){Round_Play ("2",computerPlay())});
+	Button_Papper.addEventListener("click",function StartRound(){Round_Play ("2",computerPlay())
+	Player_Choose.textContent = "Papper";	
+
+});
 
 const Button_Scissors = document.querySelector(".SC");
-	Button_Scissors.addEventListener("click",function StartRound(Sel){Round_Play ("3",computerPlay())});
+	Button_Scissors.addEventListener("click",function StartRound(){Round_Play ("3",computerPlay())
+	Player_Choose.textContent = "Scissors";
+});
 // ---------------------------------------------------
 
 
