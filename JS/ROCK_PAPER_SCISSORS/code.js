@@ -1,5 +1,3 @@
-
-
 function computerPlay () {
 // function called computerPlay that will randomly 
 // return either ‘Rock’, ‘Paper’ or ‘Scissors’. 
@@ -21,7 +19,7 @@ return cPlay;
 };
 
 
-function Round (playerSelection, computerSelection){
+function Round_Play (playerSelection, computerSelection){
 // Write a function that plays a single round of Rock Paper Scissors.
 // The function should take two parameters 
 // - the playerSelection and computerSelection 
@@ -69,21 +67,25 @@ if (Pselects == "Paper" && computerSelection == "Scissors"){console.log("You win
 return PlayerPoint;
 };
 
+//function StartRound(Sel){
+//Round_Play (Sel,computerPlay());
+//};
 
 
+// ---------------------------------------------------
+// Round_Play (playerSelection, computerSelection)
 
-//  const container = document.querySelector('#container');
-
-// const content = document.createElement('div');
-//		content.classList.add('content');
-//		content.textContent = 'This is the glorious text-content!';
-
-//	container.appendChild(content);
+const Button_Rock = document.querySelector(".RK");
+	//Button_Rock.addEventListener("click",StartRound("1"));
+	Button_Rock.addEventListener("click",function StartRound(Sel){Round_Play ("1",computerPlay())});
 
 
+//const Button_Papper = document.querySelector(".P");
+//	Button_Papper.addEventListener("click", PlayRound("2"));
 
-// init game 
-game();
+//const Button_Scissors = document.querySelector(".S");
+//	Button_Scissors.addEventListener("click", PlayRound("3"));
 
+// ---------------------------------------------------
 
 
