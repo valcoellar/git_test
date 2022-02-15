@@ -43,40 +43,45 @@ switch (playerSelection){
 console.log(`player choose: ${Pselects}`);
 console.log(`computer choose: ${computerSelection}` );
 
+var win = "";
+
 // ------ Draw game ------
 if (Pselects == computerSelection){console.log("Draw Game!!"); PlayerPoint = 3; };
 // -----------------------
 
 // --- Player Wins
 // Paper beats Rock
-if (Pselects == "Paper" && computerSelection == "Rock"){console.log("You win!! Paper beats Rock !"); PlayerPoint = 1; };
+if (Pselects == "Paper" && computerSelection == "Rock"){var Win = ("You win!! Paper beats Rock !"); PlayerPoint = 1; };
 // Rock beats Scissors
-if (Pselects == "Rock" && computerSelection == "Scissors"){console.log("You win!! Rock beats Scissors !"); PlayerPoint = 1; };
+if (Pselects == "Rock" && computerSelection == "Scissors"){var Win = ("You win!! Rock beats Scissors !"); PlayerPoint = 1; };
 // Scissors beats Paper
-if (Pselects == "Scissors" && computerSelection == "Paper"){console.log("You win!! Scissors beats Paper !"); PlayerPoint = 1; };
+if (Pselects == "Scissors" && computerSelection == "Paper"){var Win = ("You win!! Scissors beats Paper !"); PlayerPoint = 1; };
 
 // --- Computer Wins
 // Paper beats Rock
-if (Pselects == "Rock" && computerSelection == "Paper"){console.log("You Lose!! Paper beats Rock !"); PlayerPoint = 0;};
+if (Pselects == "Rock" && computerSelection == "Paper"){var Win = ("You Lose!! Paper beats Rock !"); PlayerPoint = 0;};
 // Rock beats Scissors
-if (Pselects == "Scissors" && computerSelection == "Rock"){console.log("You Lose!! Rock beats Scissors !"); PlayerPoint = 0;};
+if (Pselects == "Scissors" && computerSelection == "Rock"){var Win = ("You Lose!! Rock beats Scissors !"); PlayerPoint = 0;};
 // Scissors beats Paper
-if (Pselects == "Paper" && computerSelection == "Scissors"){console.log("You win!! Scissors beats Paper !"); PlayerPoint = 0;};
+if (Pselects == "Paper" && computerSelection == "Scissors"){var Win = ("You win!! Scissors beats Paper !"); PlayerPoint = 0;};
 
-
-return PlayerPoint;
+// ---- return two values of a function
+return [PlayerPoint,Win];
 };
 
 const Player_Choose = document.querySelector(".Player_Choose");
 const Computer_Choose = document.querySelector(".Computer_Choose");
+const Winner_Result = document.querySelector(".Winner");
 
 // ---------------------------------------------------
 const Button_Rock = document.querySelector(".RK");
 		Button_Rock.addEventListener("click",function StartRound(){
 			var CP = computerPlay();
-			Round_Play ("1",CP);
+			var Round_Result =	Round_Play ("1",CP);
 		Player_Choose.textContent = "Rock";		
-		Computer_Choose.textContent = CP;				
+		Computer_Choose.textContent = CP;
+		Winner_Result.textContent = Round_Result[1];
+
 });
 
 const Button_Papper = document.querySelector(".PP");
