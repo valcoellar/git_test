@@ -46,7 +46,7 @@ console.log(`computer choose: ${computerSelection}` );
 var win = "";
 
 // ------ Draw game ------
-if (Pselects == computerSelection){console.log("Draw Game!!"); PlayerPoint = 3; };
+if (Pselects == computerSelection){var Win =("Draw Game!!"); PlayerPoint = 3; };
 // -----------------------
 
 // --- Player Wins
@@ -87,17 +87,19 @@ const Button_Rock = document.querySelector(".RK");
 const Button_Papper = document.querySelector(".PP");
 	Button_Papper.addEventListener("click",function StartRound(){
 		var CP = computerPlay();
-		Round_Play ("2",CP);
+		var Round_Result = Round_Play ("2",CP);
 	Player_Choose.textContent = "Papper";	
 	Computer_Choose.textContent = CP;
+	Winner_Result.textContent = Round_Result[1];
 });
 
 const Button_Scissors = document.querySelector(".SC");
 	Button_Scissors.addEventListener("click",function StartRound(){
 		var CP = computerPlay();
-		Round_Play ("3",CP);
+		var Round_Result = Round_Play ("3",CP);
 	Player_Choose.textContent = "Scissors";
 	Computer_Choose.textContent = CP;
+	Winner_Result.textContent = Round_Result[1];
 });
 // ---------------------------------------------------
 
