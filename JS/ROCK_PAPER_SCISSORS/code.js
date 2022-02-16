@@ -69,9 +69,14 @@ if (Pselects == "Paper" && computerSelection == "Scissors"){var Win = ("You win!
 return [PlayerPoint,Win];
 };
 
+//-------------------------------------------------------------
 const Player_Choose = document.querySelector(".Player_Choose");
 const Computer_Choose = document.querySelector(".Computer_Choose");
 const Winner_Result = document.querySelector(".Winner");
+const Game_Round = document.querySelector(".Rounds");
+var Player_Score = 0;
+var PC_Score = 0;
+
 
 // ---------------------------------------------------
 const Button_Rock = document.querySelector(".RK");
@@ -82,6 +87,12 @@ const Button_Rock = document.querySelector(".RK");
 		Computer_Choose.textContent = CP;
 		Winner_Result.textContent = Round_Result[1];
 
+if (Round_Result[0] == 1) {Player_Score++;}
+if (Round_Result[0] == 0) {PC_Score++;}	
+
+if (Player_Score == 5){Game_Round.textContent = "Player wins 5 Rounds";}
+if (PC_Score == 5){Game_Round.textContent = "Computer wins 5 Rounds";}
+	
 });
 
 const Button_Papper = document.querySelector(".PP");
@@ -91,6 +102,12 @@ const Button_Papper = document.querySelector(".PP");
 	Player_Choose.textContent = "Papper";	
 	Computer_Choose.textContent = CP;
 	Winner_Result.textContent = Round_Result[1];
+	
+if (Round_Result[0] == 1) {Player_Score++;}
+if (Round_Result[0] == 0) {PC_Score++;}	
+
+if (Player_Score == 5){Game_Round.textContent = "Player wins 5 Rounds";}
+if (PC_Score == 5){Game_Round.textContent = "Computer wins 5 Rounds";}
 });
 
 const Button_Scissors = document.querySelector(".SC");
@@ -100,6 +117,12 @@ const Button_Scissors = document.querySelector(".SC");
 	Player_Choose.textContent = "Scissors";
 	Computer_Choose.textContent = CP;
 	Winner_Result.textContent = Round_Result[1];
+
+if (Round_Result[0] == 1) {Player_Score++;}
+if (Round_Result[0] == 0) {PC_Score++;}	
+
+if (Player_Score == 5){Game_Round.textContent = "Player wins 5 Rounds";}
+if (PC_Score == 5){Game_Round.textContent = "Computer wins 5 Rounds";}
 });
 // ---------------------------------------------------
 
