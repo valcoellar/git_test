@@ -15,6 +15,10 @@ const content = document.createElement("div");
 		content.classList.add("grid-item");
 		content.textContent = NGrid;
 		container.style.display = "grid";
+		container.setAttribute('style','grid-template-columns: repeat(20,auto)');
+		
+
+// div.setAttribute('style', 'width:330px; float:left');
 		//container.style("grid-template-columns", "repeat(20,auto)");
 
 
