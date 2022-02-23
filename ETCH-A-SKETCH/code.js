@@ -10,7 +10,10 @@ console.log(NGrid);
 
 //--------------------------------
 const container = document.querySelector(".grid-container");
-	  container.setAttribute('style','grid-template-columns: repeat('+NGrid+',auto)');
+ container.setAttribute('style','grid-template-columns: repeat('+NGrid+',auto)');
+
+
+
 
 // add using DocumentFragment----
 var frag = document.createDocumentFragment();
