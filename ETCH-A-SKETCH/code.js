@@ -10,21 +10,25 @@ console.log(NGrid);
 
 //--------------------------------
 const container = document.querySelector(".grid-container");
+		container.setAttribute('style','grid-template-columns: repeat(20,auto)');
+
 
 const content = document.createElement("div");
-		content.classList.add("grid-item");
-		content.textContent = NGrid;
-		container.style.display = "grid";
-		container.setAttribute('style','grid-template-columns: repeat(20,auto)');
+	//	content.classList.add("grid-item");
+	//	content.textContent = NGrid;
+	//	container.appendChild(content);
 		
 
-// div.setAttribute('style', 'width:330px; float:left');
-		//container.style("grid-template-columns", "repeat(20,auto)");
+// add using DocumentFragment----
+var frag = document.createDocumentFragment();
 
-
-		
-
-
-		container.appendChild(content);
+for(var x = 0; x < 10; x++) {
+	var GI = document.createElement("div");
+	GI.classList.add("grid-item");
+	GI.innerHTML = NGrid;
+	frag.appendChild(GI);
+}
+container.appendChild(frag);
+// ------------------------------		
 
 }
