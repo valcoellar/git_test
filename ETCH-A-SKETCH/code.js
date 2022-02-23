@@ -10,19 +10,12 @@ console.log(NGrid);
 
 //--------------------------------
 const container = document.querySelector(".grid-container");
-		container.setAttribute('style','grid-template-columns: repeat(20,auto)');
-
-
-const content = document.createElement("div");
-	//	content.classList.add("grid-item");
-	//	content.textContent = NGrid;
-	//	container.appendChild(content);
-		
+	  container.setAttribute('style','grid-template-columns: repeat('+NGrid+',auto)');
 
 // add using DocumentFragment----
 var frag = document.createDocumentFragment();
 
-for(var x = 0; x < 10; x++) {
+for(var x = 0; x < NGrid; x++) {
 	var GI = document.createElement("div");
 	GI.classList.add("grid-item");
 	GI.innerHTML = NGrid;
