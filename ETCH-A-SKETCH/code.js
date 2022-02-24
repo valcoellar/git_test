@@ -10,7 +10,8 @@ console.log(NGrid);
 
 //--------------------------------
 const container = document.querySelector(".grid-container");
- container.setAttribute('style','grid-template-columns: repeat('+NGrid+',auto)');
+ // container.setAttribute('style','grid-template-columns: repeat('+NGrid+',auto)');
+ 	container.setAttribute('style','grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))');
 
 
 

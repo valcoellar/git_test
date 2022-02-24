@@ -5,6 +5,10 @@
 /*	grid-template-rows: repeat(20,auto); */
 	background-color: #2196f3;
 	padding: 10px;
+	width: 600px;
+	height: 600px;
+	grid-column-gap: 1px;
+  	grid-row-gap: 1px;
   
 }	
 
