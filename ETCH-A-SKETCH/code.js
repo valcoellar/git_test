@@ -10,13 +10,7 @@ let	NGrid = prompt("How Many --Max64--");
 
 //--------------------------------
 const container = document.querySelector(".grid-container");
-  	// container.setAttribute('style','grid-template-columns: repeat(auto-fill, minmax(10px, auto))');
-  	//container.setAttribute('style','grid-template-columns: repeat(auto-fill, minmax(10, auto));grid-template-rows: repeat(auto-fill, minmax(10, auto))');
-  	container.setAttribute('style','grid-template-columns: repeat(auto-fill, minmax(10px, auto))');
-  	//container.setAttribute('style','grid-template-rows: repeat(auto-fill, minmax(10px, auto))');
-
-
-
+  	container.setAttribute('style','grid-template-columns: repeat(' +NGrid+',1fr);grid-template-rows: repeat(' +NGrid+', 1fr))');
 
 // add using DocumentFragment----
 var frag = document.createDocumentFragment();
@@ -31,3 +25,4 @@ container.appendChild(frag);
 // ------------------------------		
 
 }
+
