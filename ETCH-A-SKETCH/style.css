@@ -9,7 +9,7 @@
 	height: 600px;
 	grid-column-gap: 1px;
   	grid-row-gap: 1px;
-  
+  	
 }	
 
 .grid-item {
@@ -18,4 +18,5 @@
 	padding: 20px;
 	font-size: 30px;
 	text-align: center;
+	padding: 0px 0px 0px 0px;
 }
