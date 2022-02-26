@@ -11,7 +11,7 @@ console.log(NGrid);
 //--------------------------------
 const container = document.querySelector(".grid-container");
  // container.setAttribute('style','grid-template-columns: repeat('+NGrid+',auto)');
- 	container.setAttribute('style','grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))');
+ 	container.setAttribute('style','grid-template-columns: repeat(auto-fill, minmax(10px, auto))');
 
 
 
@@ -22,7 +22,7 @@ var frag = document.createDocumentFragment();
 for(var x = 0; x < NGrid; x++) {
 	var GI = document.createElement("div");
 	GI.classList.add("grid-item");
-	GI.innerHTML = NGrid;
+	// GI.innerHTML = NGrid;
 	frag.appendChild(GI);
 }
 container.appendChild(frag);
