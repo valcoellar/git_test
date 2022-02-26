@@ -7,7 +7,6 @@ let	NGrid = prompt("How Many --Max64--");
 	console.log(NGrid * NGrid);
 
 //create dvis in # NGrid <div>
-
 //--------------------------------
 const container = document.querySelector(".grid-container");
   	container.setAttribute('style','grid-template-columns: repeat(' +NGrid+',1fr);grid-template-rows: repeat(' +NGrid+', 1fr))');
@@ -26,3 +25,6 @@ container.appendChild(frag);
 
 }
 
+// ---- TdDo
+// -paint cells in hover event
+// -
