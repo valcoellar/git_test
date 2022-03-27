@@ -18,6 +18,14 @@ for(var x = 0; x < (NGrid * NGrid); x++) {
 	var GI = document.createElement("div");
 	GI.classList.add("grid-item");
 	// GI.innerHTML = NGrid;
+
+	// create change color hover effect
+	for (var i = 0 ; i < NGrid; i++) {
+		GI.addEventListener("mouseover", function(Hover_function){
+        	Hover_function.target.style.backgroundColor = 'black';
+    				});
+									}
+ 	// ---------------------------------									
 	frag.appendChild(GI);
 }
 container.appendChild(frag);
@@ -25,6 +33,7 @@ container.appendChild(frag);
 
 }
 
+
 // ---- TdDo
-// -paint cells in hover event
-// -
+// 
+// 
