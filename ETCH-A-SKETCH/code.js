@@ -5,6 +5,11 @@ function Clear_New () {
 // ---- TdDo
 // make the button clear actualy clear´s the grid.
 
+//function removeActiveStyle(div) {
+//  buttons.forEach((div) => {
+//    button.classList.remove('grid-item');
+//  });
+// }
 
 // ------------------------------
 
