@@ -2,6 +2,12 @@
 
 
 function Clear_New () {
+// ---- TdDo
+// make the button clear actualy clear´s the grid.
+
+
+// ------------------------------
+
 let	NGrid = prompt("How Many --Max64--");
 	if (NGrid > 64 ) {NGrid = 64}
 	console.log(NGrid * NGrid);
@@ -34,6 +40,3 @@ container.appendChild(frag);
 }
 
 
-// ---- TdDo
-// 
-// 
