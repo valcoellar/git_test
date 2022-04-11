@@ -1,9 +1,10 @@
 // code js
 
+function Clear_Space() {
+// ---- ToDo
+// make the button clear actually clear´s the grid.
 
-function Clear_New () {
-// ---- TdDo
-// make the button clear actualy clear´s the grid.
+
 
 //function removeActiveStyle(div) {
 //  buttons.forEach((div) => {
@@ -12,6 +13,10 @@ function Clear_New () {
 // }
 
 // ------------------------------
+
+}
+
+function Clear_New () {
 
 let	NGrid = prompt("How Many --Max64--");
 	if (NGrid > 64 ) {NGrid = 64}
