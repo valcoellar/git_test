@@ -1,16 +1,19 @@
 // code js
 
-function Clear_Space() {
+function Clear_Space () {
 // ---- ToDo
 // make the button clear actually clear´s the grid.
+const element = document.getElementById("grid-item");
+//element.remove(); 
+
+do {
+ element.parentNode.removeChild(element);
+
+}
+while (element.hasChildNodes !== "" );
 
 
 
-//function removeActiveStyle(div) {
-//  buttons.forEach((div) => {
-//    button.classList.remove('grid-item');
-//  });
-// }
 
 // ------------------------------
 
@@ -32,6 +35,7 @@ var frag = document.createDocumentFragment();
 
 for(var x = 0; x < (NGrid * NGrid); x++) {
 	var GI = document.createElement("div");
+	GI.setAttribute("id","grid-item");
 	GI.classList.add("grid-item");
 	// GI.innerHTML = NGrid;
 
