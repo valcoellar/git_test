@@ -4,13 +4,17 @@ function Clear_Space () {
 // ---- ToDo
 // make the button clear actually clear´s the grid.
 const element = document.getElementById("grid-item");
-//element.remove(); 
+var elements = document.all('grid-item').length;
 
-do {
- element.parentNode.removeChild(element);
 
+for (let i = 0; i < elements; i++) {
+  element.remove();
+  console.log(elements);
 }
-while (element.hasChildNodes !== "" );
+
+
+
+
 
 
 
