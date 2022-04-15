@@ -1,27 +1,16 @@
 // code js
 
 function Clear_Space () {
-// ---- ToDo
-// make the button clear actually clear´s the grid.
-const element = document.getElementById("grid-item");
 var elements = document.all('grid-item').length;
 
-
 for (let i = 0; i < elements; i++) {
+const element = document.getElementById("grid-item");
   element.remove();
-  console.log(elements);
 }
 
-
-
-
-
-
-
-
+}
 // ------------------------------
 
-}
 
 function Clear_New () {
 
