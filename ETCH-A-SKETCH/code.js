@@ -7,6 +7,7 @@ for (let i = 0; i < elements; i++) {
 const element = document.getElementById("grid-item");
   element.remove();
 }
+Clear_New();
 
 }
 // ------------------------------
