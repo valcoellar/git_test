@@ -42,6 +42,9 @@ const sum = function() {
   if (isNaN(N_args)) N_args = 0;
   return N_args ;  
   	
+ // computes the sum of an array of two numbers
+ // computes the sum of an array of many numbers
+  
 };
 
 const multiply = function() {
