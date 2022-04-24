@@ -104,7 +104,16 @@ const power = function() {
 };
 
 const factorial = function() {
-	
+
+	let n = parseInt(arguments[0]);
+ 	var total = 1; 
+
+ 	for (i=1; i<=n; i++) {
+  		total = total * i; 
+ 	}
+ return total; 
+
+  // End Function 
 };
 
 // Do not edit below this line
