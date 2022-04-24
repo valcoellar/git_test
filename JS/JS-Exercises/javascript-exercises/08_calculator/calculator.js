@@ -96,7 +96,11 @@ Object.entries(arguments).forEach(([key, value]) => {
 };
 
 const power = function() {
-	
+	let N_Base = parseInt(arguments[0]);
+ 	let N_Exponent = parseInt(arguments[1]);
+ 
+ 	return N_Base ** N_Exponent;
+  // End Function 
 };
 
 const factorial = function() {
