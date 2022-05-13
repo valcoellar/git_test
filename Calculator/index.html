@@ -5,8 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <div class="container">
+        
+        <div class="display">
+            <output class="N_Result" type="text" id="N_Result">0</output>
+        </div>
+
+        <div class="keyboard">
+            <button class="Button_AC" data-type="clear" id="Button_AC" >AC</button>
+            <button class="Button_C" data-type="backspace" id="Button_C">C</button>
+
+            <button class="division" data-type="sign_division" id="division">/</button>
+            <button class="multiplication" data-type="sign_multiplication" id="multiplication">*</button>
+            <button class="substract" data-type="sign_substract" id="substract">-</button>
+            <button class="addition" data-type="sign_addition" id="addition">+</button>
+
+            <button class="N_7" data-type="Number_7" id="N_7">7</button>
+            <button class="N_8" data-type="Number_8" id="N_8">8</button>
+            <button class="N_9" data-type="Number_9" id="N_9">9</button>
+            <button class="N_4" data-type="Number_4" id="N_4">4</button>
+            <button class="N_5" data-type="Number_5" id="N_5">5</button>
+            <button class="N_6" data-type="Number_6" id="N_6">6</button>
+            <button class="N_1" data-type="Number_1" id="N_1">1</button>
+            <button class="N_2" data-type="Number_2" id="N_2">2</button>
+            <button class="N_3" data-type="Number_3" id="N_3">3</button>
+
+            <button class="equal" data-type="sign_equal" id="equal">=</button>
+
+
+
+        </div>
+
+
+
+
+    </div>
+    <footer>
+        <p>Author: Valentin Coellar S.<br>
+        <a href="mailto:valcoellar@gmail.com">valcoellar@gmail.com</a></p>
+      </footer>
+
+    <script src="code.js"></script>
 </body>
 </html>
