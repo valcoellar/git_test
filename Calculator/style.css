@@ -1,0 +1,61 @@
+html {
+   margin:0;padding:0;  
+  }
+  
+  .container {
+      /* center container */
+       display: flex; 
+      align-items: center;
+      justify-content: center;
+      /* --------------- */ 
+      
+    }
+
+.Calc {
+    border: 6px solid blue;
+    border-radius: 20px;
+    width: 280px;
+    height: 300px;
+    
+ }
+
+ .N_Result {
+        /*Display */
+        border: 6px solid blue;
+
+}
+
+.keyboard {
+    display:flex;
+    flex-wrap: wrap; 
+   /* align-items: center; */
+   /* justify-content: center; */
+   /*   justify-content: space-between; */
+     grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      margin-left: 20px;
+      margin-top: 20px;
+        
+}
+
+.Button_AC, .Button_C, .equal {
+    height: 60px;
+    width: 60px;
+}
+
+.division, .multiplication, .substract, .addition {
+    display:flex;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 30px;
+}
+
+.N_1, .N_2, .N_3, .N_4, .N_5, .N_6, .N_7, .N_8, .N_9, .N_0 {
+    height: 60px;
+    width: 60px;   
+}
+
+
+.footer {
+   
+}
