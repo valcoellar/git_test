@@ -7,6 +7,7 @@ html {
        display: flex; 
       align-items: center;
       justify-content: center;
+      margin-top:10vh;
       /* --------------- */ 
       
     }
@@ -15,44 +16,62 @@ html {
     border: 6px solid blue;
     border-radius: 20px;
     width: 280px;
-    height: 300px;
+    height: 400px;
     
  }
 
  .N_Result {
         /*Display */
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        height: 80px;
         border: 6px solid blue;
+        border-radius: 12px;
+        justify-content:right;
+        margin-left: 15px;
+        margin-top: 20px;
 
 }
 
 .keyboard {
     display:flex;
     flex-wrap: wrap; 
-   /* align-items: center; */
-   /* justify-content: center; */
-   /*   justify-content: space-between; */
-     grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      margin-left: 20px;
-      margin-top: 20px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 20px;
+    margin-top: 15px;
         
 }
 
-.Button_AC, .Button_C, .equal {
+.Button_AC, .Button_C, .on_off {
     height: 60px;
     width: 60px;
+    margin-left: 15px;
+    
+
 }
 
+.equal {
+    height: 60px;
+    width: 60px;
+  /*  margin-left: 70px; */
+
+}
 .division, .multiplication, .substract, .addition {
-    display:flex;
-    flex-wrap: wrap;
+    display:flex; 
+ /*   flex-wrap: wrap;  */
     height: 40px;
-    width: 30px;
+    width: 30px; 
+    
+    
 }
 
 .N_1, .N_2, .N_3, .N_4, .N_5, .N_6, .N_7, .N_8, .N_9, .N_0 {
     height: 60px;
-    width: 60px;   
+    width: 60px;
+    margin-left: 25px; 
+      
 }
 
 
