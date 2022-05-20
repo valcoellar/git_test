@@ -42,19 +42,30 @@ html {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 5px;
     border: 6px solid rgb(131, 7, 32);
         
 }
 
 .keyboard_operators {
     border: 6px solid rgb(35, 92, 177);
+   /* display:flex; */
+    flex-wrap: wrap;  
+    height: 40px;
+    width: 30px; 
+    margin-left: 75%;
 
+}
+
+.division, .multiplication, .substract, .addition {
+    height: 60px;
+    width: 60px;
 }
 
 .keyboard_Numbers {
     border: 6px solid rgb(51, 180, 0);
 }
+
 .Button_AC, .Button_C, .on_off {
     height: 60px;
     width: 60px;
@@ -69,19 +80,12 @@ html {
   /*  margin-left: 70px; */
 
 }
-.division, .multiplication, .substract, .addition {
-    display:flex; 
- /*   flex-wrap: wrap;  */
-    height: 40px;
-    width: 30px; 
-    
-    
-}
+
 
 .N_1, .N_2, .N_3, .N_4, .N_5, .N_6, .N_7, .N_8, .N_9, .N_0 {
     height: 60px;
     width: 60px;
-    margin-left: 25px; 
+    margin-left: 5px; 
       
 }
 
