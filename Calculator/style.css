@@ -17,8 +17,8 @@ html {
 .Calc {
     border: 6px solid blue;
     border-radius: 20px;
-    width: 280px;
-    height: 400px;
+    width: 290px;
+    height: 480px;
     
  }
 
@@ -43,7 +43,7 @@ html {
     grid-row-gap: 0px;
     margin-left: 20px;
     margin-top: 5px;
-    border: 6px solid rgb(131, 7, 32);
+    
         
 }
 
@@ -60,10 +60,20 @@ html {
 .division, .multiplication, .substract, .addition {
     height: 60px;
     width: 60px;
+    margin-left: 5px;
+}
+
+.equal {
+    height: 60px;
+    width: 129px;
+    margin-left: 5px;
+
 }
 
 .keyboard_Numbers {
-    border: 6px solid rgb(51, 180, 0);
+    height: 250px;
+    width: 290px;
+    margin-left: 5px;
 }
 
 .Button_AC, .Button_C, .on_off {
@@ -74,18 +84,12 @@ html {
 
 }
 
-.equal {
-    height: 60px;
-    width: 60px;
-  /*  margin-left: 70px; */
-
-}
-
 
 .N_1, .N_2, .N_3, .N_4, .N_5, .N_6, .N_7, .N_8, .N_9, .N_0 {
     height: 60px;
     width: 60px;
     margin-left: 5px; 
+    margin-top: 5px;
       
 }
 
