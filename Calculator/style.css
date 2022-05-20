@@ -12,6 +12,8 @@ html {
       
     }
 
+
+
 .Calc {
     border: 6px solid blue;
     border-radius: 20px;
@@ -41,9 +43,18 @@ html {
     grid-row-gap: 0px;
     margin-left: 20px;
     margin-top: 15px;
+    border: 6px solid rgb(131, 7, 32);
         
 }
 
+.keyboard_operators {
+    border: 6px solid rgb(35, 92, 177);
+
+}
+
+.keyboard_Numbers {
+    border: 6px solid rgb(51, 180, 0);
+}
 .Button_AC, .Button_C, .on_off {
     height: 60px;
     width: 60px;
