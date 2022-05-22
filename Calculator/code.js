@@ -30,7 +30,7 @@ const Power_Button = document.querySelector(".on_off");
 Power_Button.addEventListener("click",PowerOn);
 
 const N7 = document.querySelector(".N_7");
-N7.addEventListener("click",Enter_Digits(7););
+N7.addEventListener("click",Enter_Digits);
 
 
 
