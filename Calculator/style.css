@@ -1,5 +1,6 @@
 html {
    margin:0;padding:0;  
+   background-image: radial-gradient(rgb(136, 212, 241), rgb(25, 25, 65));
   }
   
   .container {
@@ -17,6 +18,12 @@ html {
     border-radius: 20px;
     width: 290px;
     height: 480px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 15px 5px #000000;
     
  }
 
@@ -28,12 +35,12 @@ html {
         height: 80px;
         border: 6px solid blue;
         border-radius: 12px;
-       /* justify-content:right; */
         margin-left: 15px;
         margin-top: 20px;
         font-size: 50px;
-       justify-content: flex-end;
-      background-color: rgb(165, 238, 171);
+        justify-content: flex-end;
+        background-color: rgb(165, 238, 171,0.1);
+      
 }
 
 .keyboard {
@@ -90,7 +97,7 @@ html {
     width: 60px;
     margin-left: 5px; 
     margin-top: 5px;
-      
+    border-width: 04px;  
 }
 
 
