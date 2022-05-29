@@ -16,10 +16,10 @@ function Clear_Display (){
     //Clear only the display
 };
 
-function Enter_Digits (){
+function Enter_Digits (param_1){
     // Enter the digits in the display
-Display_Screen.textContent = Display_Screen.textContent + "7";
-    console.log(arguments[0]);
+Display_Screen.textContent = Display_Screen.textContent + param_1;
+    // console.log(param_1);
 };
 
 
@@ -30,9 +30,37 @@ const Power_Button = document.querySelector(".on_off");
 Power_Button.addEventListener("click",PowerOn);
 
 const N7 = document.querySelector(".N_7");
-N7.addEventListener("click",Enter_Digits);
+N7.addEventListener("click",Enter_Digits.bind(null, 7),false);
+
+const N8 = document.querySelector(".N_8");
+N8.addEventListener("click",Enter_Digits.bind(null, 8),false);
+
+const N9 = document.querySelector(".N_9");
+N9.addEventListener("click",Enter_Digits.bind(null, 9),false);
+
+const N4 = document.querySelector(".N_4");
+N4.addEventListener("click",Enter_Digits.bind(null, 4),false);
+
+const N5 = document.querySelector(".N_5");
+N5.addEventListener("click",Enter_Digits.bind(null, 5),false);
+
+const N6 = document.querySelector(".N_6");
+N6.addEventListener("click",Enter_Digits.bind(null, 6),false);
+
+const N1 = document.querySelector(".N_1");
+N1.addEventListener("click",Enter_Digits.bind(null, 1),false);
+
+const N2 = document.querySelector(".N_2");
+N2.addEventListener("click",Enter_Digits.bind(null, 2),false);
+
+const N3 = document.querySelector(".N_3");
+N3.addEventListener("click",Enter_Digits.bind(null, 3),false);
+
+const N0 = document.querySelector(".N_0");
+N0.addEventListener("click",Enter_Digits.bind(null, 0),false);
 
 
 
 
 // to-do: add input functions 
+// show button text as number in function
