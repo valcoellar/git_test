@@ -63,4 +63,4 @@ N0.addEventListener("click",Enter_Digits.bind(null, 0),false);
 
 
 // to-do: add input functions 
-// show button text as number in function
+
