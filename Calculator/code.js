@@ -1,5 +1,8 @@
 //code js
 
+
+var M_Memory =0;
+
 // *------------------- Functions ----------------------
 function PowerOn() {
     // Clear display 
@@ -18,8 +21,15 @@ function Clear_Display (){
 
 function Enter_Digits (param_1){
     // Enter the digits in the display
-Display_Screen.textContent = Display_Screen.textContent + param_1;
-    // console.log(param_1);
+
+    //Enters only 10 digits
+if (M_Memory.length != 10 ) {
+
+    Display_Screen.textContent = Display_Screen.textContent + param_1;
+    M_Memory= Display_Screen.textContent;
+
+    
+}
 };
 
 
