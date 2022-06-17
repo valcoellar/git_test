@@ -2,6 +2,7 @@
 
 
 var M_Memory =0;
+var M_Memory2=0;
 
 // *------------------- Functions ----------------------
 function PowerOn() {
@@ -30,6 +31,21 @@ if (M_Memory.length != 10 ) {
  
 }
 };
+
+function B_Add () {
+    let I_Mem = parseInt(Display_Screen.textContent);
+    M_Memory2 = M_Memory2 + I_Mem;
+         
+        
+     Display_Screen.textContent = 0;
+     console.log(M_Memory2);
+
+};
+
+function R_Result () {
+    Display_Screen.textContent = M_Memory2;
+};
+
 
 
 //----------------------Listeners ----------------------
@@ -68,8 +84,13 @@ N3.addEventListener("click",Enter_Digits.bind(null, 3),false);
 const N0 = document.querySelector(".N_0");
 N0.addEventListener("click",Enter_Digits.bind(null, 0),false);
 
+//------------------ operations -----------------------------
 
+const BAdd = document.querySelector(".addition");
+BAdd.addEventListener("click",B_Add);
 
+const BEqual = document.querySelector(".equal");
+BEqual.addEventListener("click",R_Result);
 
-// to-do: add input functions 
+// to-do: make add 
 
