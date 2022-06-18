@@ -26,9 +26,9 @@ function Enter_Digits (param_1){
 
     //Enters only 10 digits
 if (M_Memory.length != 10 ) {
-   
-  //  Display_Screen.textContent = Display_Screen.textContent + param_1;
-  Display_Screen.textContent = param_1;
+  
+   Display_Screen.textContent = Display_Screen.textContent + param_1;
+  
 }
 };
 
@@ -36,13 +36,12 @@ function B_Add () {
     I_Mem = parseInt(Display_Screen.textContent);
     M_Memory2 = M_Memory2 + I_Mem;
     
- //--------------------------------------------------------
- 
- 
+    //--------------------------------------------------------
+    Display_Screen.textContent = "";
         
      
      console.log(M_Memory2);
-     Display_Screen.textContent = M_Memory2.toString();
+    // Display_Screen.textContent = M_Memory2.toString();
 };
 
 function R_Result () {
