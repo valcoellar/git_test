@@ -9,7 +9,7 @@ function PowerOn() {
     // Clear display 
     const Display_Screen = document.querySelector(".N_Result");
     Display_Screen.textContent = "";
-    // console.log("click it");
+    M_Memory2 = 0;
 };
 
 function All_Clear (){
@@ -22,28 +22,32 @@ function Clear_Display (){
 
 function Enter_Digits (param_1){
     // Enter the digits in the display
-
     M_Memory= Display_Screen.textContent;
 
     //Enters only 10 digits
 if (M_Memory.length != 10 ) {
-    Display_Screen.textContent = Display_Screen.textContent + param_1;
- 
+   
+  //  Display_Screen.textContent = Display_Screen.textContent + param_1;
+  Display_Screen.textContent = param_1;
 }
 };
 
 function B_Add () {
-    let I_Mem = parseInt(Display_Screen.textContent);
+    I_Mem = parseInt(Display_Screen.textContent);
     M_Memory2 = M_Memory2 + I_Mem;
-         
+    
+ //--------------------------------------------------------
+ 
+ 
         
-     Display_Screen.textContent = 0;
+     
      console.log(M_Memory2);
-
+     Display_Screen.textContent = M_Memory2.toString();
 };
 
 function R_Result () {
-    Display_Screen.textContent = M_Memory2;
+     Display_Screen.textContent = M_Memory2;
+
 };
 
 
