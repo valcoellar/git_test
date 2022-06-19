@@ -3,6 +3,7 @@
 
 var M_Memory =0;
 var M_Memory2=0;
+var OP_Flag ="";
 
 // *------------------- Functions ----------------------
 function PowerOn() {
@@ -26,11 +27,22 @@ function Clear_Display (){
 
 function Enter_Digits (param_1){
     // Enter the digits in the display
-    M_Memory= Display_Screen.textContent; 
+var digits = Display_Screen.textContent; 
+  //  M_Memory= Display_Screen.textContent; 
 
     //Enters only 10 digits
-if (M_Memory.length != 10 ) {
-   Display_Screen.textContent = Display_Screen.textContent + param_1;
+if (digits.length != 10 ) {
+
+if (OP_Flag == "") {
+   M_Memory = Display_Screen.textContent + param_1;
+   Display_Screen.textContent = M_Memory;
+                    } else {
+                        
+                        M_Memory2 = Display_Screen.textContent + param_1;
+                        Display_Screen.textContent = M_Memory2;
+                                    }
+
+
 }
 };
 
@@ -54,7 +66,7 @@ function divide () {
 
 function Read_OP (Param_1) {
     Display_Screen.textContent = "";
-console.log(Param_1);
+    OP_Flag = Param_1;
 
 };
 
@@ -68,7 +80,7 @@ function Operate () {
      // and then calls one of the above 
      //functions on the numbers.
 
-console.log("operate");
+console.log(M_Memory, "operate", OP_Flag, M_Memory2);
 
 // here
 
