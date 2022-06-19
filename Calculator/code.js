@@ -1,8 +1,9 @@
 //code js
 
 // to-do: 
-// 26/ 5 to large (correct decimal digits)
+// in sum limit output to 10 digits
 // C button clear memory
+// remove control points
 
 
 var M_Memory =0;
@@ -27,6 +28,7 @@ function All_Clear (){
 function Clear_Display (){
     //Clear only the display
     Display_Screen.textContent = "";
+
 };
 
 function Enter_Digits (param_1){
@@ -49,29 +51,29 @@ if (digits.length != 10 ) {
 
 // ------------- OPS --------------------
 function Add () {
-    console.log("add");
     var R_Result = parseInt(M_Memory) + parseInt(M_Memory2);
-    
-    if (R_Result.length < 10) {
+    console.log(R_Result);
+
+    if (R_Result.length != 10) {
     Display_Screen.textContent = R_Result;
                                 } else {Display_Screen.textContent = 0; }
 };
 
 function subtract () {
-    console.log("subtract");
     Display_Screen.textContent = parseInt(M_Memory) - parseInt(M_Memory2);
 };
 
 function multiply () {
-    console.log("multiply");
     Display_Screen.textContent = parseInt(M_Memory) * parseInt(M_Memory2);
 };
 
 function divide () {
-    console.log("divide");
-    var R_Result = parseInt(M_Memory) + parseInt(M_Memory2);
-   
-    Display_Screen.textContent = parseInt(M_Memory) / parseInt(M_Memory2);
+    var R_Result = parseInt(M_Memory) / parseInt(M_Memory2);
+    if (R_Result.length < 10) {
+        Display_Screen.textContent = R_Result;
+                                    } else {
+                                      Display_Screen.textContent = R_Result.toString().slice(0, 5);
+                                             }
 };
 // ------------- END OPS -----------------
 
@@ -155,7 +157,7 @@ N0.addEventListener("click",Enter_Digits.bind(null, 0),false);
 
 //------------------ operations -----------------------------
 
-const Clear_All = document.querySelector(".Button_AC");
+const Clear_All = document.querySelector(".Button_C");
 Clear_All.addEventListener("click",All_Clear);
 
 const Clear_C = document.querySelector(".Button_C");
