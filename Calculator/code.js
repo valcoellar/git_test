@@ -1,11 +1,5 @@
 //code js
 
-// to-do: 
-// in sum limit output to 10 digits
-// C button clear memory
-// remove control points
-
-
 var M_Memory =0;
 var M_Memory2=0;
 var OP_Flag ="";
@@ -23,6 +17,7 @@ function All_Clear (){
     Display_Screen.textContent = "";
     M_Memory = 0;
     M_Memory2 = 0;
+    OP_Flag ="";
 };
 
 function Clear_Display (){
@@ -52,11 +47,11 @@ if (digits.length != 10 ) {
 // ------------- OPS --------------------
 function Add () {
     var R_Result = parseInt(M_Memory) + parseInt(M_Memory2);
-    console.log(R_Result);
+    
 
-    if (R_Result.length != 10) {
+    if (R_Result.length < 10) {
     Display_Screen.textContent = R_Result;
-                                } else {Display_Screen.textContent = 0; }
+                                } else {Display_Screen.textContent = R_Result.toString().slice(0, 9); }
 };
 
 function subtract () {
@@ -64,7 +59,12 @@ function subtract () {
 };
 
 function multiply () {
-    Display_Screen.textContent = parseInt(M_Memory) * parseInt(M_Memory2);
+    var R_Result = parseInt(M_Memory) * parseInt(M_Memory2);
+    
+    if (R_Result.length < 10) {
+        Display_Screen.textContent = R_Result;
+                                    } else {Display_Screen.textContent = R_Result.toString().slice(0, 9); }
+
 };
 
 function divide () {
@@ -95,7 +95,7 @@ function Operate () {
      // and then calls one of the above 
      //functions on the numbers.
 
-console.log(M_Memory, "operate", OP_Flag, M_Memory2);
+// elements (M_Memory, "operate", OP_Flag, M_Memory2);
 // here  sends to respective functions based on
 // OP_Flag -- operator 
 
