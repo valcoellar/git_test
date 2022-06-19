@@ -53,6 +53,7 @@ function divide () {
 // ------------- END OPS -----------------
 
 function Read_OP (Param_1) {
+    Display_Screen.textContent = "";
 console.log(Param_1);
 
 };
@@ -68,6 +69,9 @@ function Operate () {
      //functions on the numbers.
 
 console.log("operate");
+
+// here
+
 };
 
 
