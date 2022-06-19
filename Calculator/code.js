@@ -28,19 +28,18 @@ function Clear_Display (){
 function Enter_Digits (param_1){
     // Enter the digits in the display
 var digits = Display_Screen.textContent; 
-  //  M_Memory= Display_Screen.textContent; 
-
+  
     //Enters only 10 digits
 if (digits.length != 10 ) {
 
-if (OP_Flag == "") {
-   M_Memory = Display_Screen.textContent + param_1;
-   Display_Screen.textContent = M_Memory;
+    if (OP_Flag == "") {
+    M_Memory = Display_Screen.textContent + param_1;
+    Display_Screen.textContent = M_Memory;
                     } else {
-                        
+
                         M_Memory2 = Display_Screen.textContent + param_1;
                         Display_Screen.textContent = M_Memory2;
-                                    }
+                           }
 
 
 }
@@ -65,24 +64,27 @@ function divide () {
 // ------------- END OPS -----------------
 
 function Read_OP (Param_1) {
+    if (OP_Flag == "") {
     Display_Screen.textContent = "";
     OP_Flag = Param_1;
-
+                        } else { 
+                            OP_Flag = Param_1; 
+                        }
 };
 
 
 
 function Operate () {
-     Display_Screen.textContent = M_Memory2;
-
-
+     Display_Screen.textContent = "";
      //takes an operator and 2 numbers
      // and then calls one of the above 
      //functions on the numbers.
 
 console.log(M_Memory, "operate", OP_Flag, M_Memory2);
+OP_Flag = "";
 
-// here
+// here  sends to respective functions based on
+// OP_Flag -- operator 
 
 };
 
