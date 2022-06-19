@@ -40,31 +40,34 @@ if (digits.length != 10 ) {
                         M_Memory2 = Display_Screen.textContent + param_1;
                         Display_Screen.textContent = M_Memory2;
                            }
-
-
 }
 };
 
 // ------------- OPS --------------------
 function Add () {
     console.log("add");
+    Display_Screen.textContent = parseInt(M_Memory) + parseInt(M_Memory2);
 };
 
 function subtract () {
     console.log("subtract");
+    Display_Screen.textContent = parseInt(M_Memory) - parseInt(M_Memory2);
 };
 
 function multiply () {
     console.log("multiply");
+    Display_Screen.textContent = parseInt(M_Memory) * parseInt(M_Memory2);
 };
 
 function divide () {
     console.log("divide");
+    Display_Screen.textContent = parseInt(M_Memory) / parseInt(M_Memory2);
 };
 // ------------- END OPS -----------------
 
 function Read_OP (Param_1) {
     if (OP_Flag == "") {
+    M_Memory = Display_Screen.textContent
     Display_Screen.textContent = "";
     OP_Flag = Param_1;
                         } else { 
@@ -81,10 +84,31 @@ function Operate () {
      //functions on the numbers.
 
 console.log(M_Memory, "operate", OP_Flag, M_Memory2);
-OP_Flag = "";
-
 // here  sends to respective functions based on
 // OP_Flag -- operator 
+
+switch (OP_Flag) {
+case "+":
+    Add();
+    break;
+case "-":
+    subtract();
+    break;
+case "*":
+    multiply();
+    break;
+case "/":
+    divide();
+    break;
+}
+
+//if (OP_Flag == "+") {
+//    Add();
+//} else if (OP_Flag)
+
+OP_Flag = "";
+//M_Memory = 0;
+//M_Memory2 =0;
 
 };
 
