@@ -1,5 +1,7 @@
 //code js
 
+// Users should be able to string together several operations
+
 var M_Memory =0;
 var M_Memory2=0;
 var OP_Flag ="";
@@ -78,12 +80,15 @@ function divide () {
 // ------------- END OPS -----------------
 
 function Read_OP (Param_1) {
+    console.log(OP_Flag);
     if (OP_Flag == "") {
     M_Memory = Display_Screen.textContent
     Display_Screen.textContent = "";
     OP_Flag = Param_1;
                         } else { 
+                            Display_Screen.textContent = "";
                             OP_Flag = Param_1; 
+                            Operate();   //  here 
                         }
 };
 
