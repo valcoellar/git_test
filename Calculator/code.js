@@ -14,15 +14,19 @@ function PowerOn() {
 
 function All_Clear (){
     //Clear all variables and stand ready for next
+    Display_Screen.textContent = "";
+    M_Memory = 0;
+    M_Memory2 = 0;
 };
 
 function Clear_Display (){
     //Clear only the display
+    Display_Screen.textContent = "";
 };
 
 function Enter_Digits (param_1){
     // Enter the digits in the display
-    M_Memory= Display_Screen.textContent;
+    M_Memory= Display_Screen.textContent; 
 
     //Enters only 10 digits
 if (M_Memory.length != 10 ) {
@@ -30,17 +34,40 @@ if (M_Memory.length != 10 ) {
 }
 };
 
-function B_Add () {
-    I_Mem = parseInt(Display_Screen.textContent);
-    M_Memory2 = M_Memory2 + I_Mem;
-//--------------------------------------------------------
-    Display_Screen.textContent = "";
+// ------------- OPS --------------------
+function Add () {
+    console.log("add");
+};
+
+function subtract () {
+    console.log("subtract");
+};
+
+function multiply () {
+    console.log("multiply");
+};
+
+function divide () {
+    console.log("divide");
+};
+// ------------- END OPS -----------------
+
+function Read_OP (Param_1) {
+console.log(Param_1);
 
 };
 
-function R_Result () {
+
+
+function Operate () {
      Display_Screen.textContent = M_Memory2;
-// here
+
+
+     //takes an operator and 2 numbers
+     // and then calls one of the above 
+     //functions on the numbers.
+
+console.log("operate");
 };
 
 
@@ -83,11 +110,28 @@ N0.addEventListener("click",Enter_Digits.bind(null, 0),false);
 
 //------------------ operations -----------------------------
 
+const Clear_All = document.querySelector(".Button_AC");
+Clear_All.addEventListener("click",All_Clear);
+
+const Clear_C = document.querySelector(".Button_C");
+Clear_C.addEventListener(".Button_C",Clear_Display);
+
+
 const BAdd = document.querySelector(".addition");
-BAdd.addEventListener("click",B_Add);
+BAdd.addEventListener("click",Read_OP.bind(null ,"+"),false);
+
+const BSubstract = document.querySelector(".substract");
+BSubstract.addEventListener("click",Read_OP.bind(null, "-"),false);
+
+const BMultiplication = document.querySelector(".multiplication");
+BMultiplication.addEventListener("click",Read_OP.bind(null, "*"),false);
+
+const BDivision = document.querySelector(".division");
+BDivision.addEventListener("click",Read_OP.bind(null,"/"),false);
+
 
 const BEqual = document.querySelector(".equal");
-BEqual.addEventListener("click",R_Result);
+BEqual.addEventListener("click",Operate);
 
 // to-do: make add 
 
