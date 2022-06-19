@@ -1,5 +1,9 @@
 //code js
 
+// to-do: 
+// 26/ 5 to large (correct decimal digits)
+// C button clear memory
+
 
 var M_Memory =0;
 var M_Memory2=0;
@@ -46,7 +50,11 @@ if (digits.length != 10 ) {
 // ------------- OPS --------------------
 function Add () {
     console.log("add");
-    Display_Screen.textContent = parseInt(M_Memory) + parseInt(M_Memory2);
+    var R_Result = parseInt(M_Memory) + parseInt(M_Memory2);
+    
+    if (R_Result.length < 10) {
+    Display_Screen.textContent = R_Result;
+                                } else {Display_Screen.textContent = 0; }
 };
 
 function subtract () {
@@ -61,6 +69,8 @@ function multiply () {
 
 function divide () {
     console.log("divide");
+    var R_Result = parseInt(M_Memory) + parseInt(M_Memory2);
+   
     Display_Screen.textContent = parseInt(M_Memory) / parseInt(M_Memory2);
 };
 // ------------- END OPS -----------------
@@ -102,14 +112,7 @@ case "/":
     break;
 }
 
-//if (OP_Flag == "+") {
-//    Add();
-//} else if (OP_Flag)
-
 OP_Flag = "";
-//M_Memory = 0;
-//M_Memory2 =0;
-
 };
 
 
@@ -175,5 +178,5 @@ BDivision.addEventListener("click",Read_OP.bind(null,"/"),false);
 const BEqual = document.querySelector(".equal");
 BEqual.addEventListener("click",Operate);
 
-// to-do: make add 
+
 
