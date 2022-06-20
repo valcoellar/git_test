@@ -5,6 +5,7 @@
 var M_Memory =0;
 var M_Memory2=0;
 var OP_Flag ="";
+var R_Result=0;
 
 // *------------------- Functions ----------------------
 function PowerOn() {
@@ -28,10 +29,10 @@ function Clear_Display (){
 
 };
 
-function Enter_Digits (param_1){
+function Enter_Digits (param_1){            
     // Enter the digits in the display
 var digits = Display_Screen.textContent; 
-  
+
     //Enters only 10 digits
 if (digits.length != 10 ) {
 
@@ -44,17 +45,17 @@ if (digits.length != 10 ) {
                         Display_Screen.textContent = M_Memory2;
                            }
 }
+
 };
 
 // ------------- OPS --------------------
 function Add () {
     var R_Result = parseInt(M_Memory) + parseInt(M_Memory2);
     
-
     if (R_Result.length < 10) {
     Display_Screen.textContent = R_Result;
                                 } else {Display_Screen.textContent = R_Result.toString().slice(0, 9); }
-};
+                            };
 
 function subtract () {
     Display_Screen.textContent = parseInt(M_Memory) - parseInt(M_Memory2);
@@ -80,29 +81,30 @@ function divide () {
 // ------------- END OPS -----------------
 
 function Read_OP (Param_1) {
-    console.log(OP_Flag);
-    if (OP_Flag == "") {
-    M_Memory = Display_Screen.textContent
+        
+if (OP_Flag == "") {
+   M_Memory = Display_Screen.textContent;
     Display_Screen.textContent = "";
     OP_Flag = Param_1;
                         } else { 
                             Display_Screen.textContent = "";
-                            OP_Flag = Param_1; 
-                            Operate();   //  here 
-                        }
+                           if (M_Memory2 != 0) {Operate();}  
+                         }
 };
 
 
 
 function Operate () {
-     Display_Screen.textContent = "";
-     //takes an operator and 2 numbers
+    Display_Screen.textContent = "";
+   
+   //takes an operator and 2 numbers
      // and then calls one of the above 
      //functions on the numbers.
 
 // elements (M_Memory, "operate", OP_Flag, M_Memory2);
 // here  sends to respective functions based on
 // OP_Flag -- operator 
+
 
 switch (OP_Flag) {
 case "+":
@@ -120,6 +122,7 @@ case "/":
 }
 
 OP_Flag = "";
+M_Memory2 = Display_Screen.textContent;
 };
 
 
