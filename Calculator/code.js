@@ -1,7 +1,5 @@
 //code js
 
-// Users should be able to string together several operations
-
 var M_Memory =0;
 var M_Memory2=0;
 var OP_Flag ="";
@@ -26,7 +24,6 @@ function All_Clear (){
 function Clear_Display (){
     //Clear only the display
     Display_Screen.textContent = "";
-
 };
 
 function Enter_Digits (param_1){            
@@ -55,7 +52,7 @@ function Add () {
     if (R_Result.length < 10) {
     Display_Screen.textContent = R_Result;
                                 } else {Display_Screen.textContent = R_Result.toString().slice(0, 9); }
-                            };
+};
 
 function subtract () {
     Display_Screen.textContent = parseInt(M_Memory) - parseInt(M_Memory2);
@@ -81,22 +78,25 @@ function divide () {
 // ------------- END OPS -----------------
 
 function Read_OP (Param_1) {
-        
-if (OP_Flag == "") {
-   M_Memory = Display_Screen.textContent;
+    
+if (Param_1 == "") {
+    M_Memory = Display_Screen.textContent;
     Display_Screen.textContent = "";
     OP_Flag = Param_1;
+    
                         } else { 
+                            if (M_Memory2 != "") {Operate();};
+                            OP_Flag = Param_1;
                             Display_Screen.textContent = "";
-                           if (M_Memory2 != 0) {Operate();}  
-                         }
+                                }
+
 };
 
 
 
 function Operate () {
     Display_Screen.textContent = "";
-   
+    
    //takes an operator and 2 numbers
      // and then calls one of the above 
      //functions on the numbers.
@@ -122,7 +122,8 @@ case "/":
 }
 
 OP_Flag = "";
-M_Memory2 = Display_Screen.textContent;
+M_Memory = Display_Screen.textContent;
+M_Memory2 = 0;
 };
 
 
