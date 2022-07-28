@@ -36,7 +36,7 @@ color: white;
 
 .Container_UP{
 	width: 60vw;
-background-color: lightgrey;
+background-color: #F9FAFB;
 }
 
 .Text_Up{
@@ -50,8 +50,6 @@ padding-left: 40px;
 box-shadow: 5px 15px 21px 0px #050505;
 padding: 10px;
 display: flex;
-
-
 }
 
 .L_Side{
@@ -62,6 +60,56 @@ padding-left: 30px;
 
 .R_Side{
 /* border: 5px solid red; */
+/*horizontal items*/
 float: right; width: auto;
 padding-left: 50px;
 }
+
+#F_Name:hover,#E_MAIL:hover,#P_Pass:hover,
+#L_NAME:hover,#P_Phone:hover,#P_Confirm:hover
+{
+border-color: #5A1DBE;
+}
+
+
+
+
+/*--- Container Low*/
+
+.Container_Low{
+background-color: #F9FAFB;
+margin-top: 30px;
+height: 46.2%;
+
+}
+
+.S_button{
+margin-top: 10vh;
+margin-left: 5vw;
+background-color: #580F38;
+border-radius: 25px;
+text-decoration:none;
+padding:21px 64px;
+color: white;
+font-weight: bold;
+}
+
+.S_button:hover{
+background-color: #BE25BF
+}
+
+.S_button:active{
+position: relative;
+top: 3px;
+}
+
+.A_account, .L_Log{
+margin-top: 7vh;
+margin-left: 7vw;
+}
+
+.L_Log{
+color: green;
+font-weight: bold;
+}
+
