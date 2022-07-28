@@ -52,7 +52,7 @@
                     <label for="P_Phone">Phone Number:</label><br>
                     <input type="text" id="P_Phone" value=""><br><br>
                     <label for="P_Confirm">CONFIRM PASSWORD:</label><br>
-                    <input type="password" id="P_Confirm" value=""><br><br>
+                    <input type="text" id="P_Confirm" value=""><br><br>
 </div>
                     
                   </form>

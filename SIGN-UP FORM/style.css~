@@ -55,13 +55,13 @@ display: flex;
 }
 
 .L_Side{
-/* border: 5px solid #1C6EA4; */
+border: 5px solid #1C6EA4;
 float: left; width: auto;
 padding-left: 30px;
 }
 
 .R_Side{
-/* border: 5px solid red; */
+border: 5px solid red;
 float: right; width: auto;
 padding-left: 50px;
 }
