@@ -1,0 +1,85 @@
+/* Style File*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(1fr 10%) 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+/*----SIDE BAR LEFT----*/
+.SideBar_Up{
+background-color: blue;
+grid-row-start: 1;
+grid-row-end: 3;
+color: white;
+font-weight: bold;
+}
+.SideBarLinks ul li{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+/*--------------------*/
+
+
+/*-----HEADER--------*/
+.H_Header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+
+.B_Button{
+    justify-content: center;
+    background-color: #1992D4;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    /*margin-left: 10%;*/
+   /*
+    padding: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+*/    
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+margin-left: 15px;
+}
+
+/*------------------*/
+
+
+/*---CENTER---------*/
+.C_Center{
+    background-color: blueviolet;
+}
+/*------------------*/
+
+
+
+
+/*---R_Bar----------*/
+.R_Bar{
+    background-color: brown;
+}
+/*------------------*/
