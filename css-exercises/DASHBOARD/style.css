@@ -14,12 +14,12 @@ body, html {
 
 .container{
     display: grid;
-    grid-template-columns: minmax(1fr 10%) 1fr 1fr;
+    grid-template-columns: minmax(auto,230px) 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 /*----SIDE BAR LEFT----*/
 .SideBar_Up{
-background-color: blue;
+background-color: #1992D4;
 grid-row-start: 1;
 grid-row-end: 3;
 color: white;
@@ -44,8 +44,6 @@ font-weight: bold;
     grid-column-end: 4;
 }
 
-
-
 .B_Button{
     justify-content: center;
     background-color: #1992D4;
@@ -54,17 +52,55 @@ font-weight: bold;
     border-style: none;
     font-size: 12px;
     font-weight: bold;
-    /*margin-left: 10%;*/
-   /*
-    padding: 5%;
-    padding-left: 7%;
-    padding-right: 7%;
-*/    
-padding: 10px;
-padding-left: 20px;
-padding-right: 20px;
-margin-left: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
 }
+.Header_1{
+    display: inline-block; 
+    margin-left: 5%;
+    margin-top: 5%;
+    
+}
+.S_SearchBox{
+    border-radius: 20px;
+    border-width: 0px;
+    width: 80%;
+    background-color: #E2E8F0;
+  
+}
+
+.S_SearchBox:focus {
+   outline: none;
+}
+
+.Header_3{
+    margin-left: 20px;
+}
+
+.T_Hello p {
+    text-align: left;
+    font-size: 10px;
+    
+}
+
+.T_Account p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+.User_Img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 25px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+
 
 /*------------------*/
 
