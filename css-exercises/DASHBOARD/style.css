@@ -37,30 +37,31 @@ font-weight: bold;
 /*-----HEADER--------*/
 .H_Header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: aqua;
+    background-color: white;
     grid-column-start: 2;
     grid-column-end: 4;
-}
+    }
 
 .B_Button{
-    justify-content: center;
+  /*  justify-content: center; */
     background-color: #1992D4;
     color: white;
     border-radius: 20px;
     border-style: none;
     font-size: 12px;
     font-weight: bold;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 10px; 
+    padding-left: 20px; 
     padding-right: 20px;
-    margin-left: 15px;
+   
 }
 .Header_1{
     display: inline-block; 
     margin-left: 5%;
     margin-top: 5%;
+   
     
 }
 .S_SearchBox{
@@ -75,8 +76,9 @@ font-weight: bold;
    outline: none;
 }
 
-.Header_3{
+.Header_3 {
     margin-left: 20px;
+    
 }
 
 .T_Hello p {
@@ -100,7 +102,39 @@ font-weight: bold;
     box-shadow: 5px 5px 15px 5px #000000;
 }
 
+.Header_2{
+    align-items: flex-start;
+    display: flex;
+    margin-top: 5%;
+    margin-right: 15%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
 
+.Header_4{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 15%;
+}
+
+.User_Icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.I_Notification{
+    height: 26px;
+    margin-right: 20px;
+    margin-top: 3%;
+}
+
+.User_Name {
+    margin-top: 5%;
+    font-weight: bold;
+}
 
 /*------------------*/
 
@@ -117,5 +151,16 @@ font-weight: bold;
 /*---R_Bar----------*/
 .R_Bar{
     background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: 1fr 1fr;*/
+    text-align: center;
+    /* gap: 4px;*/
+}
+
+.Up_Card {
+    display: grid;
+    background-color: #bccbde;
+   
 }
 /*------------------*/
